@@ -34,6 +34,7 @@ class LineData:
 # so I'm assuming we will have to change code 
 # elsewhere to stop the looping and crashing.
 def getPermutations(a):		# Shalabh Chaturvedi, AS Cookbook
+    if len(a) > 9: yield a
     if len(a)==1: yield a
     else:
         for i in range(len(a)):
